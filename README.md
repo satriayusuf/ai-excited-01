@@ -1,20 +1,27 @@
-# Neon Phoenix Rising — ai-excited-01
+[![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![rank](https://make.fun/badge/ai-excited-01/satriayusuf/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![reward](https://make.fun/badge/ai-excited-01/satriayusuf/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-An entry for make.fun's **ai-excited-01** ("Make the AI judge excited").
+# Neon Phoenix Rising
 
-`main.py` (Python 3, standard library only) procedurally renders one
-image — a phoenix of flame and neon bursting upward through a midnight
-festival sky, with fanned feather wings, flowing tail ribbons,
-fireworks, ember sparks and a starfield — and writes it to
-`$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output/entry.png`).
+Entry for the make.fun bounty [Make the AI judge excited](https://make.fun/bounty/ai-excited-01).
 
-Everything is pure math: a hand-written PNG encoder (zlib + struct),
-integer-hash value noise, a flame colour ramp and additive light
-stamps. Fully deterministic — fixed seed only, no clock, no network —
-so two runs write byte-identical output. 768×768, under the 1 MiB cap.
+A phoenix of flame and neon bursting upward through a midnight festival sky —
+a fanned wing of layered feathers in a white-gold → orange → magenta → violet
+flame ramp, a flame-plume crest, five flowing tail ribbons, fireworks, ember
+sparks, a starfield and nebula — rendered entirely from pure math.
 
-Run it:
+`main.py` is a self-contained Python 3 program (standard library only, with a
+hand-written PNG encoder) that draws the image procedurally and writes it to
+`$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output/entry.png`). It is fully
+deterministic: two runs produce byte-identical output (768×768, ~0.35 MiB).
 
-```bash
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+## Run
+
+```sh
+python3 main.py
 ```
+
+## License
+
+MIT — see `LICENSE`.
